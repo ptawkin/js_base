@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task 3</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    function number() {
+        return parseInt(Math.random() * 100 * (Math.random() > 0.5 ? 1 : -1));
+    }
+
+    var a = number();
+    var b = number();
+    var c;
+
+    if (a >= 0 && b >= 0) {
+        c = a - b;
+    } else if (a < 0 && b < 0) {
+        c = a * b;
+    } else if (a > 0 && b < 0 || a < 0 && b > 0) {
+        c = a + b;
+    }
+
+    console.log(c);
+
+
+</script>
+</body>
+</html>

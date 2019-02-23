@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    var a = 1, b = 1, c, d;
+    c = ++a; alert(c);           // 2 - a = 2, c = 2
+    d = b++; alert(d);           // 1 - d = 2, b = 2
+    c = (2+ ++a); alert(c);      // 5 - a = 3, c = 5
+    d = (2+ b++); alert(d);      // 4 - d = 4, b = 3
+    alert(a);                    // 3 описано выше
+    alert(b);                    // 3 описано выше
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task 5</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    function number() {
+        return parseInt(Math.random() * 100 * (Math.random() > 0.5 ? 1 : -1));
+    }
+
+    var a = number();
+    alert(`Число a равно ${a}`);
+
+    var b = number();
+    alert(`Число b равно ${b}`);
+
+    var c = prompt(`Ввыберите и введите одну из математических операций:
+    '+', '-', '*' или '/'`);
+
+
+    function sum(a, b) {
+        return a + b;
+    }
+
+    function subtraction(a, b) {
+        return a - b;
+    }
+
+    function multiplication(a, b) {
+        return a * b;
+    }
+
+    function division(a, b) {
+        return a / b;
+    }
+
+
+    function mathOperation(a, b, c) {
+        var result;
+
+        switch (c) {
+            case '+':
+                result = sum(a, b);
+                break;
+            case '-':
+                result = subtraction(a, b);
+                break;
+            case '*':
+                result = multiplication(a, b);
+                break;
+            case '/':
+                result = division(a, b);
+                break;
+        }
+
+        return alert(`a ${c} b = ${result}`)
+    }
+
+
+    mathOperation(a, b, c);
+
+
+</script>
+</body>
+</html>
