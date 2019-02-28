@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    /*
+    * Продолжить работу с интернет-магазином:
+    В прошлом домашнем задании вы реализовали корзину на базе массивов.
+    Какими объектами можно заменить их элементы?
+    Реализуйте такие объекты.
+    Перенести функционал подсчета корзины на объектно-ориентированную базу.
+    */
+
+    var cart;
+    var totalCost = 0;
+
+    cart = [
+        {
+        	name: 'Молоко',
+            cost: 76,
+            value: 2,
+        },
+	    {
+        	name: 'Колбаса',
+            cost: 199,
+            value: 1,
+        },
+	    {
+        	name: 'Сок',
+            cost: 82,
+            value: 3,
+        },
+	    {
+        	name: 'Сыр',
+            cost: 218,
+            value: 1,
+        },
+    ];
+
+    function countBasketPrice(cart) {
+	    for (var i = 0; i < cart.length; i++) {
+		    totalCost += cart[i].cost * cart[i].value;
+	    }
+	    console.log(totalCost);
+    }
+
+    countBasketPrice(cart);
+
+
+
+
+</script>
+</body>
+</html>
